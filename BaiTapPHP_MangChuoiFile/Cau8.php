@@ -34,7 +34,7 @@
 				<td><input type="text" disabled name="giamdan"></td>
 			</tr>
 			<tr>
-				<td colspan="2"><span>(*)</span>Các số được nhập cách nhau bằng dấu ","</td>
+				<td colspan="2"><span style="color:red;">(*)</span>Các số được nhập cách nhau bằng dấu ","</td>
 			</tr>
 		</table>
 	</form>
