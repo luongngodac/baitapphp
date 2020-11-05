@@ -1,0 +1,23 @@
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    height: 640px;
+}
+.container{
+    border: 1px solid black;
+    margin: 10px;
+    width: 240px;
+}
+img{
+    width: 150px;
+}
+.items{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+.paging p{
+    text-align: center;
+}
+

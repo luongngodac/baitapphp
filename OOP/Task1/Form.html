@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="../../bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="text-center">QUẢN LÝ NHÂN VIÊN</h1>
+    </div>
+    <div class="container border">
+        <form>
+            <div class="row pt-3">
+                <div class="col-sm-7">
+                    <div class="form-group">
+                        <label for="fulName" class="col-sm-4">Họ và tên</label>
+                        <input class="col-sm-6" type="text" name="fullName">                
+                    </div>
+                    <div class="form-group">
+                        <label for="dateOfBirth" class="col-sm-4">Ngày sinh</label>
+                        <input class="col-sm-4" type="date" name="dateOfBirth">
+                    </div>
+                    <div class="form-group">
+                        <label for="gender" class="col-sm-4">Giới tính</label>
+                        <input class="mr-2" type="radio" name="gender">Nam
+                        <input class=" mr-2 ml-3" type="radio" name="gender">Nữ
+                    </div>
+                    <div class="form-group">
+                        <label for="employeeType" class="col-sm-4">Loại nhân viên</label>
+                        <input class="mr-2" type="radio" name="employeeType">Văn phòng
+                        <input class=" mr-2 ml-3" type="radio" name="employeeType">Sản xuất
+                    </div>
+                    <div class="form-group">
+                        <label for="dayAbsent" class="col-sm-4">Số ngày vắng</label>
+                        <input class="col-sm-4" type="text" name="dayAbsent">
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="form-group">
+                        <label for="childrenNum" class="col-sm-5">Số con</label>
+                        <input class="col-sm-6" type="number" name="childrenNum">
+                    </div>
+                    <div class="form-group">
+                        <label for="dateIn" class="col-sm-5">Ngày vào làm</label>
+                        <input class="col-sm-6" type="date" name="dateIn">
+                    </div>
+                    <div class="form-group">
+                        <label for="payRate" class="col-sm-5">Hệ số lương</label>
+                        <input class="col-sm-6" type="text" name="payRate">
+                    </div>
+                    <div class="form-group">
+                        <label for="productsNum" class="col-sm-5">Số sản phẩm</label>
+                        <input class="col-sm-6" type="text" name="productsNum">
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+        </form>
+        <button type="submit" class="btn btn-sm btn-success ml-3 mb-3" name="submit">Caculate</button>
+    </div>
+</body>
+
+</html>
