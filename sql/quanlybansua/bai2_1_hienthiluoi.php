@@ -3,7 +3,7 @@
     mysqli_set_charset($conn, 'UTF8');
     $sql="select Ma_hang_sua,Ten_hang_sua,Dia_chi,Dien_thoai,Email from hang_sua";
     $result = mysqli_query($conn, $sql);
-    echo "<p align='center'><font size='5'> THÔNG TIN HÃNG SỮA</font></P>";
+    echo "<p align='center' ><font size='5'> THÔNG TIN HÃNG SỮA</font></P>";
     echo "<table align='center' width='700' border='1' cellpadding='2' cellspacing='2' style='border-
     collapse:collapse'>";
     echo '<tr>

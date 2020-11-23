@@ -11,18 +11,6 @@
             background-color: aquamarine;
         }
 
-        .container {
-            margin: 20px 0;
-            text-align: center;
-
-        }
-
-        .container button {
-            background: #ccffff;
-            border-radius: 5px;
-            text-align: center;
-        }
-
         .top {
             margin-left: 200px;
         }
@@ -33,11 +21,6 @@
             display: flex;
             margin: 0 auto;
 
-        }
-
-        .namduonglich {
-            margin: 0 0 25px 25px;
-            text-align: center;
         }
 
         button {
