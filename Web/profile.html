@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>profile</title>
+    <title>PROFILE: 59131342</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -39,6 +39,11 @@
     </div>
     <!-- end loader -->
     <!-- header -->
+    <button>
+            <h5 style="color: yellow"><a href="logout.php">Logout here</a> </h5></button>
+
+
+
     <header>
         <!-- header inner -->
 
@@ -68,8 +73,11 @@
                                             <li><a href="sql.html">SQL</a></li>
                                         </ul>
                                     </li>
+                                    <li>
+                                        <a href="contact.html">contact</a>
+                                    </li>
 
-                                    <li class="mean-last"> <a href="#contact">signup</a> </li>
+                                    <li class="mean-last"> <a href="./register.php">signup</a> </li>
 
                                 </ul>
                             </nav>
@@ -77,7 +85,7 @@
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
-                    <li><a class="buy" href="#">Login</a></li>
+                    <li><a class="buy" href="./login.php">Login</a></li>
                 </div>
             </div>
         </div>
@@ -118,6 +126,9 @@
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="about_box">
                         <h3>Ngô Đắc Lương</h3>
+                        <p>Code Student: 59131342<br> Class: 59CNTT2
+                            <br> School: Nha Trang University
+                        </p>
                         <p> Information technology majors </br>
                             09/2017 - Now <br>- Nha Trang University </br>
                             - Is a 4th year student at Nha Trang University.
@@ -222,7 +233,7 @@
                                     <a href="#"></a>
                                 </li>
                                 <li> <a href="http://www.ntu.edu.vn/">Nha Trang university</a></li>
-                                <li> <a href="#">Profile</a></li>
+                                <li> <a href="./profile.html">Profile</a></li>
                             </ul>
                         </div>
                     </div>
@@ -289,3 +300,9 @@
 </body>
 
 </html>
+<?php
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
+?>

@@ -1,4 +1,10 @@
 <?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header('Location: ../../Web/login.php');
+}
+?>
+<?php
     $conn = mysqli_connect('localhost', 'root', '', 'qlbansua');
     mysqli_set_charset($conn, 'UTF8');
     $sql='select Ma_khach_hang, Ten_khach_hang, Phai, Dia_chi, Dien_thoai from khach_hang';

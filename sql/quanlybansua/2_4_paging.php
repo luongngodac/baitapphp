@@ -1,4 +1,10 @@
 <?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header('Location: ../Web/login.php');
+}
+?>
+<?php
     // $rowsPerPage = 5; //số mẩu tin trên mỗi trang, giả sử là 10
     // if (!isset($_GET['page']))
     // { 

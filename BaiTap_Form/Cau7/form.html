@@ -1,51 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header('Location: ../Web/login.php');
+}
+?>
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXCERCISE 7</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EXCERCISE 7</title>
+    </head>
 
-<body>
-    <form action="config.php" Method="POST">
-        <fieldset>
-            <legend> <b>Enter your information: </b></legend>
+    <body>
+        <form action="config.php" Method="POST">
+            <fieldset>
+                <legend> <b>Enter your information: </b></legend>
 
-            <!-- <table style='border:1px solid black; '> -->
-            <table>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr>
-                    <th>Họ tên:</th>
-                    <th><input type="text" name="txthoten" id=""> </th>
-                </tr>
-                <tr>
-                    <th>Địa chỉ:</th>
-                    <th><input type="text" name="txtdiachi" id=""></th>
-                </tr>
-                <tr>
-                    <th>Số diện thoại:</th>
-                    <th><input type="text" name="txtsdt" id=""></th>
-                </tr>
-                <tr>
-                    <th>Giới tính:</th>
-                    <th><input type="radio" name="gioitinh" id="" checked value="Nam"> Nam
-                        <input type="radio" name="gioitinh" id="" value="Nữ"> Nữ
-                    </th>
-                </tr>
-                <tr>
-                    <th>Quốc tịch:</th>
-                    <th>
-                        <select name="qt">
+                <!-- <table style='border:1px solid black; '> -->
+                <table>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr>
+                        <th>Họ tên:</th>
+                        <th><input type="text" name="txthoten" id=""> </th>
+                    </tr>
+                    <tr>
+                        <th>Địa chỉ:</th>
+                        <th><input type="text" name="txtdiachi" id=""></th>
+                    </tr>
+                    <tr>
+                        <th>Số diện thoại:</th>
+                        <th><input type="text" name="txtsdt" id=""></th>
+                    </tr>
+                    <tr>
+                        <th>Giới tính:</th>
+                        <th><input type="radio" name="gioitinh" id="" checked value="Nam"> Nam
+                            <input type="radio" name="gioitinh" id="" value="Nữ"> Nữ
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Quốc tịch:</th>
+                        <th>
+                            <select name="qt">
                     
                     <option value="vn">
                             Việt Nam
@@ -58,29 +64,29 @@
                     </option>
                 
                     </select>
-                    </th>
-                </tr>
-                <tr>
-                    <th>Các môn đã học:</th>
-                    <th><input type="checkbox" name="monhoc[]" value="PHP & MySQL"> PHP & MySQL
-                        <input type="checkbox" name="monhoc[]" value="C#"> C#
-                        <input type="checkbox" name="monhoc[]" value="XML"> XML
-                        <input type="checkbox" name="monhoc[]" value="Python"> Python
-                    </th>
-                </tr>
-                <tr>
-                    <th>Ghi chú:</th>
-                    <th><textarea style="height: 12ex;" type="text" name="comments"></textarea></th>
-                </tr>
-                <tr>
-                    <th> </th>
-                    <th><input type="submit" value="Gửi">
-                        <input type="reset" value="Hủy"></th>
-                </tr>
-            </table>
-        </fieldset>
-    </form>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Các môn đã học:</th>
+                        <th><input type="checkbox" name="monhoc[]" value="PHP & MySQL"> PHP & MySQL
+                            <input type="checkbox" name="monhoc[]" value="C#"> C#
+                            <input type="checkbox" name="monhoc[]" value="XML"> XML
+                            <input type="checkbox" name="monhoc[]" value="Python"> Python
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Ghi chú:</th>
+                        <th><textarea style="height: 12ex;" type="text" name="comments"></textarea></th>
+                    </tr>
+                    <tr>
+                        <th> </th>
+                        <th><input type="submit" value="Gửi">
+                            <input type="reset" value="Hủy"></th>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
 
-</body>
+    </body>
 
-</html>
+    </html>
